@@ -4,7 +4,7 @@ ARG HOST_UID=1001
 ARG HOST_GID=1001
 
 RUN apt -y update;\
-    apt -y install python python3 curl rclone
+    apt -y install rclone
 
 RUN mkdir /data && \
     groupadd -g $HOST_GID rclone && \
