@@ -4,7 +4,7 @@ ARG HOST_UID=1001
 ARG HOST_GID=1001
 
 RUN apt -y update;\
-    apt -y install rclone
+    apt -y install rclone curl
 
 RUN mkdir /data && \
     groupadd -g $HOST_GID rclone && \
